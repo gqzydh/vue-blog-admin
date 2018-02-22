@@ -1,29 +1,32 @@
 
+基于Vue2.X构建博客后台系统
 
-基于Vue SPA构建后台系统
+[源码](https://github.com/xjh22222228/vue-blog-admin)
 
-
-
-### 技术栈
-```
-Vue2.0         # https://cn.vuejs.org/v2/guide/
-Vuex           # 状态共享
-VueRouter      # Vue 路由
-Sass           # CSS预处理器
-Animat.css     # CSS动画库
-ES6            # ES6是目前的趋势
-Webpack        # 构建打包工具
-Element-UI     # PC-UI组件库
-axios          # Promise HTTP请求库
-vue-simplemde  # Markdown 编辑器
-Echarts        # 图表
-```
+[在线预览](https://xjh22222228.github.io/vue-blog-admin/index.html)
 
 
 
 ![](https://raw.githubusercontent.com/xjh22222228/vue-blog-admin/master/static/images/preview01.png)
 
 ![](https://raw.githubusercontent.com/xjh22222228/vue-blog-admin/master/static/images/preview02.png)
+
+
+
+### 技术栈
+```
+"vue": "^2.3.3",
+"vuex": "^2.3.1"
+"vue-router": "^2.6.0",
+"animat.css": "3.5.2",
+"webpack": "^2.6.1",
+"element-ui": "^1.4.1",
+"axios": "^0.16.2",
+"vue-simplemde": "^0.3.8",
+"echarts": "^3.6.2",
+"sass": "",
+"ES6": ""
+```
 
 
 ``` bash

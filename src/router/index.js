@@ -5,7 +5,6 @@ Vue.use(Router)
 
 
 const routes =  new Router({
-	mode: 'history',
 	routes: [
 		{	// 登录
 			name: 'login',

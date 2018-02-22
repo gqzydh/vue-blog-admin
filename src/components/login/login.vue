@@ -3,7 +3,7 @@
 		<transition enter-active-class="shake" appear leave-active-class="fadeOut">
 			<div class="login-box animated">
 				<div class="avatar">
-					<img src="/static/images/logo.png" draggable="false">
+					<img src="../../assets/images/logo.png" draggable="false">
 				</div>
 				<div class="common">
 					<label class="iconfont" for="username">&#xe617;</label>
@@ -41,13 +41,13 @@ export default {
 		return {
 			flag: true,
 			username: 'admin',
-			password: '',
+			password: 'admin',
 		}
 	},
 	methods: {
 		// 点击登录
 		login () {
-			if ( this.username == 'admin' )
+			if ( this.username == 'admin' && this.password == 'admin' )
 			{
 				this.$message({
 					message: '登录成功, 准备为您跳转...',

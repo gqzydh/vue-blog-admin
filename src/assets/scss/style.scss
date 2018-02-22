@@ -223,10 +223,6 @@ em {
     font-style: normal;
 }
 
-[v-cloak] {
-    display: none;
-}
-
 @font-face {
     font-family: 'iconfont';
     src: url($ttf) format('truetype');
@@ -242,37 +238,36 @@ em {
 }
 
 
-
-// =======================
-// ======= 顶部进度条 ======
-// =======================
-
-.progress {
-    z-index: 9999999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 1%;
-    height: 3px;
-    background: #f50;
-    @include prefix(animation, progress-await 20s linear forwards);
-
-    &.active {
-
-        .progress-forward {
-            @include prefix(animation, progress-forward 200ms linear forwards);
-        }
+@keyframes drop-down {
+    // 鼠标滑过右上角登录信息弹出下拉动画
+    0% {
+        @include prefix(transform, scaleY(0))
     }
 
-    .progress-forward {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 1%;
-        height: 3px;
-        background: #f50;
+    30% {
+        @include prefix(transform, scaleY(1.2))
+    }
+
+    70% {
+        @include prefix(transform, scaleY(.9))
+    }
+
+    100% {
+        @include prefix(transform, scaleY(1))
     }
 }
+
+// 左侧菜单高亮后子菜单从右到左动画
+@keyframes slide-right {
+    0% {
+        @include prefix(transform, translate3d(99%, 0, 0));
+    }
+
+    100% {
+        @include prefix(transform, translate3d(0, 0, 0));
+    }
+}
+
 
 
 
@@ -295,8 +290,6 @@ em {
         text-decoration: underline;
     }
 }
-
-
 
 
 
@@ -373,15 +366,6 @@ em {
         }
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -504,12 +488,9 @@ em {
 
 
 
-
-
 // ==========================
 // ========== 侧边栏 =========
 // ==========================
-
 .sidebar {
     width: $sidebarWidth;
     height: 100%;

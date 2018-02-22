@@ -29,7 +29,7 @@
 
 <script>
 export default {
-	name: 'header',
+	name: 'Header',
 	data () {
 		return {
 			show: false,

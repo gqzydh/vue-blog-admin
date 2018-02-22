@@ -39,7 +39,7 @@ export default {
 
 
 <style lang="scss" type="text/css">
-@import '../../../static/scss/_variable.scss';
+@import '../../assets/scss/_variable.scss';
 .confirm-cancel {
     z-index: 99999999;
     position: fixed;
